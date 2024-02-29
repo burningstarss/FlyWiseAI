@@ -6,6 +6,6 @@
         <title>FlyWiseAi</title>
     </head>
     <body>
-
+    
     </body>
 </html>
