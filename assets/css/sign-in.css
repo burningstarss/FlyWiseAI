@@ -3,6 +3,12 @@ body {
   height: 100%;
 }
 
+.form{
+
+  width:80%;
+
+}
+
 .form-signin {
   max-width: 330px;
   padding: 1rem;
