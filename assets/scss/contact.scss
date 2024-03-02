@@ -16,7 +16,8 @@ section{
 
         display: flex;
         flex-direction: column;
-        width: 800px;
+        max-width: 800px;
+        width: 80%;
         height: 530px;
         background-color: #4D4D4D;
         text-align: center;
@@ -79,9 +80,19 @@ section{
     &__buttoncontainer{
 
         display:flex;
-        width: 680px;
+        width: 700px;
         justify-content: space-between;
         padding-bottom: 20px;
 
+        a{
+            color:#FFFFFF;
+            text-decoration: none;
+        
+            &:hover{
+                color: #7080EF;
+        
+            }
+        }
     }
 }
+

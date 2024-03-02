@@ -10,7 +10,6 @@
     <script type="module" src="./assets/js/guardar.js"></script>
   </head>
     <body>
-      <//?php include "./vistas/prueba.php" ?>
       <?php include "./vistas/contact.php" ?>
     </body>
 
