@@ -96,23 +96,23 @@
       }
     </style>
 
-<main class="loginbox">
+<main class="">
   <div class="">
     <img src="./assets/img/fywiseaiwhitecolor.svg" alt="">
     <form id="formulario">
-      <h1 class="h3 mb-3 fw-normal">Log In</h1>
+      <h1 class="">Log In</h1>
 
       <div class="form-floating">
-        <input type="text" class="form-control" id="name" placeholder="Name">
-        <label for="floatingInput">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="name@host.com">
+        <label for="floatingInput">Email</label>
       </div>
       <div class="form-floating">
         <input type="password" class="form-control" id="password" placeholder="Password">
-        <label for="floatingPassword">Contraseña</label>
+        <label for="floatingPassword">Password</label>
       </div>
       <a href="">Forgot your password?</a>
-      <button class="btn btn-primary w-100 py-2" type="submit">Sign In</button>
-      <p class="">Need an account?</p><a href="">Sign up</a>
+      <button class="" type="submit">Sign In</button>
+      <div class=""><p class="">Need an account?</p><a href="">Sign up</a></div>
     </form>
   </div>
 </main>
