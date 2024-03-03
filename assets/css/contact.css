@@ -29,12 +29,13 @@ section {
   flex-direction: column;
   text-align: left;
   gap: 10px;
+  max-width: 680px;
+  width: 90%;
 }
 .contact__message label {
   align-items: flex-start;
 }
 .contact__message textarea {
-  width: 680px;
   height: 300px;
   border-radius: 10px;
   background-color: #2B2B2B;
@@ -57,23 +58,23 @@ section {
   box-shadow: none;
   border-radius: 10px;
   border-style: none;
+  font-size: 16px;
 }
 .contact__button:hover {
+  color: #FFFFFF;
   transition: 100ms;
   background-color: #5C6AC6;
 }
 .contact__buttoncontainer {
   display: flex;
-  width: 700px;
+  max-width: 700px;
+  width: 90%;
   justify-content: space-between;
   padding-bottom: 20px;
 }
 .contact__buttoncontainer a {
   color: #FFFFFF;
   text-decoration: none;
-}
-.contact__buttoncontainer a:hover {
-  color: #7080EF;
 }
 
 /*# sourceMappingURL=contact.css.map */
