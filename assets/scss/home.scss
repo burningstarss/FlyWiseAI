@@ -9,15 +9,16 @@
     height: 100%;
     width: 100%;
     box-sizing:border-box;
-    overflow:hidden;
+
     &__content{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         max-width: 280px;
+        width: 90%;
         padding: 20px;
         background-color: #4D4D4D;
-
+        
         &--img{
             width: 100%;
             display: flex;
@@ -41,7 +42,7 @@
         height: 40px;
         margin-left: 10px;
         cursor: pointer;
-        
+
         img{
             max-height: 40px;
 
@@ -89,7 +90,6 @@
         }
     }
     &__chatbot{
-        width: 100%;
     }
 }
 

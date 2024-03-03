@@ -8,13 +8,13 @@
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 .home__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 280px;
+  width: 90%;
   padding: 20px;
   background-color: #4D4D4D;
 }
@@ -75,10 +75,6 @@
 .home__options img {
   width: 50px;
 }
-.home__chatbot {
-  width: 100%;
-}
-
 a {
   color: #FFFFFF;
   text-decoration: none;
