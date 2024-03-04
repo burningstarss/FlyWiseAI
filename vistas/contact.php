@@ -16,14 +16,14 @@
 <body>
   <main class="contact__page">
     <section>
-      <form class="contact__box">
+      <form class="contact__box" action="procesarFormularioContacto.php" method="POST">
         <h3>Contact us</h3>
         <div class="contact__message">
           <label for="message">Message</label>
-          <textarea class="contact__textarea" id="message" placeholder="What can we help you with?"></textarea>
+          <textarea class="contact__textarea" id="message" name="message" placeholder="What can we help you with?"></textarea>
         </div>
         <div class="contact__buttoncontainer">
-          <a class="contact__button" href="#">Go back</a>
+          <a class="contact__button" href="../FlyWiseAi/vistas/home.php">Go back</a>
           <button class="contact__button" type="submit">Send</button>
         </div>
       </form>

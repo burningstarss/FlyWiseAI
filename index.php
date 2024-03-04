@@ -17,6 +17,6 @@
 
   </head>
     <body>
-      <?php include "./vistas/home.php" ?>
+      <?php include "./vistas/contact.php" ?>
     </body>
 </html>
