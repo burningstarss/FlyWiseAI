@@ -50,10 +50,13 @@ section {
 .contact__button {
   color: #FFFFFF;
   background-color: #7080ef;
-  padding: 10px 30px;
+  max-width: 100px;
+  width: 30%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding: 10px;
   cursor: pointer;
   box-shadow: none;
   border-radius: 10px;
@@ -75,6 +78,18 @@ section {
 .contact__buttoncontainer a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4D4D4D;
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 0.5px;
+  border-color: #232323;
 }
 
 /*# sourceMappingURL=contact.css.map */
