@@ -77,18 +77,4 @@ section {
   text-decoration: none;
 }
 
-.popup {
-  position: absolute;
-  display: flex;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: #4D4D4D;
-  border-radius: 20px;
-  width: fit-content;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-width: 0.5px;
-  border-color: #3D3D3D;
-}
-
 /*# sourceMappingURL=contact.css.map */
