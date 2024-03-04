@@ -11,12 +11,13 @@
 
   <!-- Custom styles for this template -->
   <link href="./assets/css/contact.css" rel="stylesheet">
+  <script  src="./assets/js/contact.js"></script>
 </head>
 
 <body>
   <main class="contact__page">
     <section>
-      <form class="contact__box" action="procesarFormularioContacto.php" method="POST">
+      <form class="contact__box" method="POST">
         <h3>Contact us</h3>
         <div class="contact__message">
           <label for="message">Message</label>
@@ -24,9 +25,12 @@
         </div>
         <div class="contact__buttoncontainer">
           <a class="contact__button" href="../FlyWiseAi/vistas/home.php">Go back</a>
-          <button class="contact__button" type="submit">Send</button>
+          <button class="contact__button" onclick="showPopup()" type="submit">Send</button>
         </div>
       </form>
+      <div class="popup">
+        <p class="popup--content"></p>
+      </div>
     </section>
   </main>
 </body>
