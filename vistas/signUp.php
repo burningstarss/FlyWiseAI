@@ -7,10 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Signin Template · Bootstrap v5.3</title>
+    <title>Sign Up</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-
     
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -119,7 +118,7 @@
 <main class="container">
   <div class="">
     <img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt="">
-    <form id="formularioRegistro">
+    <form id="formulario">
       <h1 class="">Sign Up</h1>
 
       <div class="form-floating">
@@ -130,7 +129,7 @@
         <input type="password" class="form-control" id="password" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
-      <button class="" type="submit">Sign Up</button>
+      <button class="botonRegistro" type="submit">Sign Up</button>
     </form>
   </div>
 </main>
