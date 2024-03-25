@@ -18,6 +18,26 @@
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+     .container {
+      text-align: center;
+      background-color: #4d4d4d;
+      width: 300px;
+      height: 300px;
+      padding: 15px;
+      }
+      .form-control{
+        margin-left: 15px;
+        width: 250px;
+        height: 20px;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -96,11 +116,11 @@
       }
     </style>
 
-<main class="">
+<main class="container">
   <div class="">
-    <img src="./assets/img/fywiseaiwhitecolor.svg" alt="">
-    <form id="formulario">
-      <h1 class="">Log In</h1>
+    <img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt="">
+    <form id="formularioRegistro">
+      <h1 class="">Sign Up</h1>
 
       <div class="form-floating">
         <input type="text" class="form-control" id="name" placeholder="name@host.com">
@@ -110,9 +130,7 @@
         <input type="password" class="form-control" id="password" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
-      <a href="">Forgot your password?</a>
-      <button class="" type="submit">Sign In</button>
-      <div class=""><p class="">Need an account?</p><a href="">Sign up</a></div>
+      <button class="" type="submit">Sign Up</button>
     </form>
   </div>
 </main>
