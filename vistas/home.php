@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="./assets/css/home.css" rel="stylesheet">
-    <script type="module" src="./assets/js/home.js"></script>
+    <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
+    <link href="<?php echo $ruta?>/assets/css/home.css" rel="stylesheet">
+    <script type="module" src="<?php echo $ruta?>/assets/js/home.js"></script>
 </head>
 
 <body>

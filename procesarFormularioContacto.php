@@ -34,7 +34,7 @@
           <textarea class="contact__textarea" id="message" name="message" placeholder="What can we help you with?"></textarea>
         </div>
         <div class="contact__buttoncontainer">
-          <a class="contact__button "href="index.php">Go back</a>
+          <a class="contact__button" href="index.php">Go back</a>
           <button class="contact__button" type="submit">Send</button>
         </div>
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {

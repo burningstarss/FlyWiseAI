@@ -10,7 +10,7 @@
   <title>Contact page</title>
 
   <!-- Custom styles for this template -->
-  <link href="./assets/css/contact.css" rel="stylesheet">
+  <link href="<?php echo $ruta?>/assets/css/contact.css" rel="stylesheet">
 </head>
 
 <body>
