@@ -21,10 +21,12 @@ Class Controlador{
             $accion = "";
         }
 
-        if(file_exists("./assets/controladores/".ucfirst($controlador)."Controlador.php")){
-            echo "Existe el controlador";
-        }else{  
-            require_once("./assets/controladores/HomeControlador.php");
+        if(file_exists("./controladores/".ucfirst($controlador)."Controlador.php")){     //Si nos pasan controlador por argumento redirigimos a argumentoControlador.php
+            require_once("./controladores/".ucfirst($controlador)."Controlador.php");
+            $arg = ucfirst($controlador)."Controlador";
+            $contro = new $arg();
+        }else{                                                                                  //Si no nos pasan controlador por argumento redirigimos a home
+            require_once("./controladores/HomeControlador.php");
             $contro = new HomeControlador();
         }
     }

@@ -1,5 +1,6 @@
 var rotated = false;
 
+
 $("#slideToggle").click(function () {
     var contentElement = $(this).closest(".home").find("#content");
 
