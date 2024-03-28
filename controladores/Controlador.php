@@ -25,6 +25,13 @@ Class Controlador{
             require_once("./controladores/".ucfirst($controlador)."Controlador.php");
             $arg = ucfirst($controlador)."Controlador";
             $contro = new $arg();
+            if(method_exists($contro, $accion)){
+                $contro->{$accion}();
+            }else{
+                require_once("./controladores/Error404Controlador.php");
+                $error404 = new Error404Controlador($this->vista);
+                $error404->show();
+            }
         }else{                                                                                  //Si no nos pasan controlador por argumento redirigimos a home
             require_once("./controladores/HomeControlador.php");
             $contro = new HomeControlador();
