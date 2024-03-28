@@ -8,7 +8,7 @@ class Vista{
     public function render($vista,$data){
 
         //obtener la ruta de los ficheros css y js
-        require_once("./config/Enrutador.php");
+        require_once("./assets/config/Enrutador.php");
         $enrutador = new Enrutador();
         $ruta = $enrutador->getRuta();
 
