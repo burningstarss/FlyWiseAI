@@ -10,5 +10,26 @@ body {
   background-color: #2B2B2B;
   margin: 0px;
 }
+body button {
+  color: #FFFFFF;
+  background-color: #7080ef;
+  max-width: 100px;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 16px;
+}
+body button:hover {
+  color: #FFFFFF;
+  transition: 100ms;
+  background-color: #5C6AC6;
+}
 
 /*# sourceMappingURL=globalstyles.css.map */

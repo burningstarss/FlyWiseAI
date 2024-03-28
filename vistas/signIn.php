@@ -7,15 +7,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="author" content="">
+  <meta name="generator" content="">
   <title>Sign In</title>
+  <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
+  
 </head>
+
 </body>
 <main class="container">
   <div class="">
     <img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt="">
-    <form id="formularioInicioSesion">
+    <form id="formularioInicioSesion" method="post">
       <h1 class="">Log In</h1>
 
       <div class="form-floating">
@@ -34,8 +37,6 @@
     </form>
   </div>
 </main>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>
