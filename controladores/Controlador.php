@@ -21,7 +21,7 @@ Class Controlador{
             $accion = "";
         }
 
-        if(file_exists("./controladores/".ucfirst($controlador)."Controlador.php")){     //Si nos pasan controlador por argumento redirigimos a argumentoControlador.php
+        if(file_exists("./controladores/".ucfirst($controlador)."Controlador.php")){            //Si nos pasan controlador por argumento redirigimos a argumentoControlador.php
             require_once("./controladores/".ucfirst($controlador)."Controlador.php");
             $arg = ucfirst($controlador)."Controlador";
             $contro = new $arg();

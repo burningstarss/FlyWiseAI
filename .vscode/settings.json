@@ -1,0 +1,12 @@
+{
+    "launch": {
+        "configurations": [
+            {
+                "env": {
+                    "GOOGLE_APPLICATION_CREDENTIALS": "./FlyWiseAI/key.json"
+                }
+            }
+        ],
+        "compounds": [],
+    }
+}

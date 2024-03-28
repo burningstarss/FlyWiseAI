@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
-    <link href="<?php echo $ruta?>/assets/css/home.css" rel="stylesheet">
+    <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo $ruta?>/assets/css/home.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script type="module" src="<?php echo $ruta?>/assets/js/home.js"></script>
 </head>
