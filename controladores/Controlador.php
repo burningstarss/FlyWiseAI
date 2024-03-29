@@ -23,6 +23,10 @@ Class Controlador{
 
         if(file_exists("controladores/".ucfirst($controlador)."Controlador.php")){
             //echo "Existe el controlador";
+            /*require_once("./controladores/".ucfirst($controlador)."Controlador.php");
+            $nombreClase=ucfirst($controlador)."Controlador";
+            $contro= new $nombreClase(); ---- PARA QUE SEA DINAMICO*/
+            
             require_once("controladores/SignupControlador.php");
             $contro = new SignupControlador();
         }else{  
