@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <meta name="generator" content="">
   <title>Sign In</title>
   <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
-  
+  <link href="<?php echo $ruta?>/assets/css/signIn.css" rel="stylesheet">
 </head>
 
 </body>

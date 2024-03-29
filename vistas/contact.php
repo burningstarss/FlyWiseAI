@@ -11,6 +11,7 @@
 
   <!-- Custom styles for this template -->
   <link href="<?php echo $ruta?>/assets/css/contact.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/globalstyles.css">
 </head>
 
 <body>
