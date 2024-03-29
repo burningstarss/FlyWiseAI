@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Error 404: Page not found</title>
+    <title>Error 500: Internal Server Error</title>
     <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
 
   </head>
