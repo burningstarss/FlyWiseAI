@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="<?php echo $ruta?>/assets/css/home.css" rel="stylesheet">
     <script type="module" src="<?php echo $ruta?>/assets/js/home.js"></script>
 </head>
 
@@ -80,6 +80,6 @@
             sendMessage();
         }
     });
-</script>
+    </script>
 </body>
 </html>

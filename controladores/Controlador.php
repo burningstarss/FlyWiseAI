@@ -12,7 +12,7 @@ Class Controlador{
         if(isset($_GET["controlador"]) and !empty($_GET["controlador"])){
             $controlador = $_GET["controlador"];
         }else{
-            $controlador = "home";
+            $controlador = "signin";
         }
 
         if(isset($_GET["accion"]) and !empty($_GET["accion"])){
@@ -23,12 +23,12 @@ Class Controlador{
 
         if(file_exists("controladores/".ucfirst($controlador)."Controlador.php")){
             //echo "Existe el controlador";
-            /*require_once("./controladores/".ucfirst($controlador)."Controlador.php");
+            require_once("./controladores/".ucfirst($controlador)."Controlador.php");
             $nombreClase=ucfirst($controlador)."Controlador";
-            $contro= new $nombreClase(); ---- PARA QUE SEA DINAMICO*/
+            $contro= new $nombreClase();
             
-            require_once("controladores/SignupControlador.php");
-            $contro = new SignupControlador();
+            //require_once("controladores/SigninControlador.php");
+            //$contro = new SigninControlador();
         }else{  
             require_once("controladores/HomeControlador.php");
             $contro = new HomeControlador();

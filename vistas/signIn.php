@@ -46,17 +46,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <h1 class="">Log In</h1>
 
       <div class="form-floating">
-        <input type="text" class="form-control" id="nameSignIn" placeholder="name@host.com">
+        <input type="email" name="email" placeholder="name@host.com">
         <label for="floatingInput">Email</label>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="passwordSignIn" placeholder="Password">
+        <input type="password" name="password" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
       <a href="">Forgot your password?</a>
       <button class="" type="submit">Sign In</button>
       <div class="">
-        <p class="">Need an account?</p><a href="./vistas/signUp.php">Sign up</a>
+        <p class="">Need an account?</p>
+        <a href="<?php echo $ruta?>index.php?controlador=signup">Sign up</a>
       </div>
     </form>
   </div>

@@ -5,7 +5,6 @@ class SignupControlador{
         require_once("./vistas/Vista.php");
         $vista= new Vista();
         $vista->render("signup",array());
-
     }
 
 }

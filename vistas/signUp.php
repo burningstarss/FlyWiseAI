@@ -2,7 +2,7 @@
 
 $service = new PHPSupabase\Service(
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBrc3VwaWlpbGx1aHlwcnV1dGthIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTE2Mjg2MTUsImV4cCI6MjAyNzIwNDYxNX0.dN8MDnQQKytz3ZIf3jnzq4AbOTqNBEpgeuGywKtd7uQ",
-  "https://pksupiiilluhypruutka.supabase.co" 
+  "https://pksupiiilluhypruutka.supabase.co"
 );
 
 $auth = $service->createAuth();
@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   } catch (Exception $e) {
     echo $auth->getError();
   }
-
 }
 ?>
 <!doctype html>
@@ -33,19 +32,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="generator" content="">
+  <meta http-equiv="Cache-control" content="no-cache">
   <title>Sign Up</title>
-  <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
-  <link href="<?php echo $ruta?>/assets/css/signUp.css" rel="stylesheet">
+  <link href="<?php echo $ruta ?>/assets/css/globalstyles.css" rel="stylesheet">
+  <link href="<?php echo $ruta ?>/assets/css/signUp.css" rel="stylesheet">
 </head>
 
 </body>
 <main class="container">
   <div class="">
     <img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt="">
-    <form method="post">
+    <form method="post" autocomplete="off">
       <h1 class="">Sign Up</h1>
       <div class="form-floating">
-        <input type="email" name="email" placeholder="name@host.com">
+        <input type="email" name="email" id="email" placeholder="name@host.com">
         <label for="floatingInput">Email</label>
       </div>
       <div class="form-floating">
@@ -57,4 +57,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   </div>
 </main>
 </body>
+
 </html>
