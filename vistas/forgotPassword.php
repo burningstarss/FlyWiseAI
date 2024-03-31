@@ -34,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <meta name="generator" content="">
   <title>ForgotPassword</title>
   <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
+  <link href="<?php echo $ruta ?>/assets/css/forgotpassword.css" rel="stylesheet">
 </head>
 
 </body>
@@ -49,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       </div>
       <div class="form-floating">
       </div>
-      <button class="" type="submit">Enviar correo electrónico</button>
+      <button class="boton" type="submit">Enviar correo electrónico</button>
     </form>
   </div>
 </main>
