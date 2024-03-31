@@ -12,7 +12,7 @@ Class Controlador{
         if(isset($_GET["controlador"]) and !empty($_GET["controlador"])){
             $controlador = $_GET["controlador"];
         }else{
-            $controlador = "signin";
+            $controlador = "home";
         }
 
         if(isset($_GET["accion"]) and !empty($_GET["accion"])){
@@ -26,9 +26,7 @@ Class Controlador{
             require_once("./controladores/".ucfirst($controlador)."Controlador.php");
             $nombreClase=ucfirst($controlador)."Controlador";
             $contro= new $nombreClase();
-            
-            //require_once("controladores/SigninControlador.php");
-            //$contro = new SigninControlador();
+
         }else{  
             require_once("controladores/HomeControlador.php");
             $contro = new HomeControlador();
