@@ -1,6 +1,6 @@
 <?php
 
-    Class SigninModelo{
+    Class ContactModelo{
         public function __construct(Type $var = null) {
             $this->var = $var;
             //CONEXIÓN BBDD
