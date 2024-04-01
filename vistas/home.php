@@ -13,7 +13,7 @@
 <body>
     <div class="home">
         <div class="home__content" id="content">
-            <a class="home__content--img" href="">
+            <a class="home__content--img" href="<?php echo $ruta?>index.php">
                 <img src="./assets/img/fywiseaiwhitecolor.svg" alt="FlyWiseAI Logo">
             </a>
             <div class="home__chathistory">
@@ -31,7 +31,7 @@
             <div class="home__options">
                 <a class="home__options--container" href=""><img src="./assets/img/Ellipse.png" alt="Lessons icon"><span>Lessons</span></a>
                 <a class="home__options--container" href=""><img src="./assets/img/Ellipse.png" alt="Upgrade Icon"><span>Upgrade</span></a>
-                <a class="home__options--container" href=""><img src="./assets/img/Ellipse.png" alt="Account Icon"><span>Account</span></a>
+                <a class="home__options--container" href="<?php echo $ruta?>index.php?controlador=signin"><img src="./assets/img/Ellipse.png" alt="Account Icon"><span>Account</span></a>
             </div>
         </div>
         <div class="slideToggle" id="slideToggle"><img src="./assets/img/arrow.svg" alt="SlideToggle Arrow"></div>

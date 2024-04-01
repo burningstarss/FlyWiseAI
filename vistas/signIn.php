@@ -35,27 +35,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <meta name="generator" content="">
   <title>Sign In</title>
   <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
-  <link href="<?php echo $ruta?>/assets/css/signIn.css" rel="stylesheet">
+  <link href="<?php echo $ruta?>/assets/css/signin.css" rel="stylesheet">
 </head>
 
 </body>
-<main class="container">
-  <div class="">
-    <img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt="">
+<main class="form">
+  <div class="form__container">
+    <a href="<?php echo $ruta?>index.php"><img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt=""></a>
     <form id="formularioInicioSesion" method="post">
       <h1 class="">Log In</h1>
 
-      <div class="form-floating">
-        <input type="email" name="email" placeholder="name@host.com">
-        <label for="floatingInput">Email</label>
+      <div class="form__floating">
+      <label for="floatingInput">Email</label>
+      <input type="email" name="email" placeholder="name@host.com">
       </div>
-      <div class="form-floating">
-        <input type="password" name="password" placeholder="Password">
-        <label for="floatingPassword">Password</label>
-      </div>
+      <div class="form__floating">
+      <label for="floatingPassword">Password</label>
+      <input type="password" name="password" placeholder="Password">
       <a href="<?php echo $ruta?>index.php?controlador=forgotpassword">Forgot your password?</a>
+      </div>
       <button class="" type="submit">Sign In</button>
-      <div class="">
+      <div class="form__signup">
         <p class="">Need an account?</p>
         <a href="<?php echo $ruta?>index.php?controlador=signup">Sign up</a>
       </div>
