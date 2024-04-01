@@ -86,11 +86,12 @@ a:hover {
 .home__chatbot {
   position: fixed;
   font-size: 15px;
-  bottom: 25px;
-  right: 25px;
-  width: 1500px;
-  height: 850px;
-  background-color: #2B2B2B;
+  top: 91%;
+  right: 9%;
+  /* width: 1500px; */
+  width: 70%;
+  height: 90%;
+  /* background-color: #2B2B2B; */
   border-radius: 5px;
   z-index: 1000;
 }
@@ -102,7 +103,7 @@ a:hover {
 }
 
 #user-input {
-  width: calc(100% - 80px);
+  width: calc(100% - 100px);
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
