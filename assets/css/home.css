@@ -50,9 +50,13 @@
   border: 1px solid #232323;
   border-radius: 20px;
   margin-bottom: 2%;
+  font-size: 16px;
 }
 .home #user-input::placeholder {
   color: #C0C2D3;
+}
+.home #user-input:focus {
+  outline-width: 0;
 }
 .home #chat-conversation {
   display: flex;
