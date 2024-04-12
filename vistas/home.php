@@ -44,9 +44,10 @@
             <div id="chat-container">
             <div id="chat-conversation"></div>
             </div>
+            <div id="input-container"> <input type="text" id="user-input" placeholder="Type your message...">
             <button id="send-button"><img src="./assets/img/send.png" alt=""></button>
-            <input type="text" id="user-input" placeholder="Type your message...">
-
+           
+            </div>
         </div>
     </div>
     </div>
