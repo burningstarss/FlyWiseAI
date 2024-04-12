@@ -1,0 +1,8 @@
+# Archivos de configuración SASS
+.sass-cache
+
+# Directorios
+vendor/
+
+#Archivos relacionados con API keys (para cuando implementemos el chatbot)
+.env

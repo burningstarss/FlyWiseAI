@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <input type="password" name="password" placeholder="Password">
       <a href="<?php echo $ruta?>index.php?controlador=forgotpassword">Forgot your password?</a>
       </div>
-      <button class="" type="submit">Sign In</button>
+      <button class="" type="submit">Log In</button>
       <div class="form__signup">
         <p class="">Need an account?</p>
         <a href="<?php echo $ruta?>index.php?controlador=signup">Sign up</a>
