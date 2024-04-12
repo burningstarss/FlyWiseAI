@@ -43,10 +43,11 @@
         <div class="home__chatbot">
             <div id="chat-container">
             <div id="chat-conversation"></div>
+        </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-button"><img src="./assets/img/send.png" alt=""></button>
             </div>
-            <button id="send-button"><img src="./assets/img/send.png" alt=""></button>
-            <input type="text" id="user-input" placeholder="Type your message...">
-
         </div>
     </div>
     </div>
