@@ -1,3 +1,13 @@
+<?php
+if(!isset($_SESSION['usuario'])){
+
+    header("Location:index.php?controlador=signIn");
+    exit;
+    
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +40,12 @@
                 <div><a>Drone Normative</a></div>
             </div>
             <div class="home__options">
-                <a class="home__options--container" href=""><img src="./assets/img/Ellipse.png"
+                <a class="home__options--container" href=""><img src="./assets/img/book.png"
                         alt="Lessons icon"><span>Lessons</span></a>
-                <a class="home__options--container" href=""><img src="./assets/img/Ellipse.png"
+                <a class="home__options--container" href=""><img src="./assets/img/wand.png"
                         alt="Upgrade Icon"><span>Upgrade</span></a>
                 <a class="home__options--container" href="<?php echo $ruta ?>index.php?controlador=signin"><img
-                        src="./assets/img/Ellipse.png" alt="Account Icon"><span>Account</span></a>
+                        src="./assets/img/account.png" alt="Account Icon"><span>Account</span></a>
             </div>
         </div>
         <div class="slideToggle" id="slideToggle"><img src="./assets/img/arrow.svg" alt="SlideToggle Arrow"></div>

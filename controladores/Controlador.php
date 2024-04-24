@@ -7,6 +7,8 @@ Class Controlador{
 
     public function main(){
 
+        session_start();
+
         $controlador = "";
         $accion = "";
         if(isset($_GET["controlador"]) and !empty($_GET["controlador"])){
