@@ -28,7 +28,7 @@ if(!isset($_SESSION['usuario'])){
     <link rel="icon" type="image/ico" href="<?php echo $ruta ?>assets/img/favicon.ico">
 </head>
 <body>
-    <div class="account" id="account" style="display: block;">
+    <div class="account" id="account" style="display: none;">
         <div class="account__box">
         <form action="" method="POST">
             <button class="signOut" id="logOffButton">Sign Out</button>
@@ -54,12 +54,12 @@ if(!isset($_SESSION['usuario'])){
                 <div><a>Drone Normative</a></div>
             </div>
             <div class="home__options">
-                <a class="home__options--container" href=""><img src="./assets/img/book.png"
-                        alt="Lessons icon"><span>Lessons</span></a>
-                <a class="home__options--container" href=""><img src="./assets/img/wand.png"
-                        alt="Upgrade Icon"><span>Upgrade</span></a>
-                <a id="accountLink" class="home__options--container" href=""><img
-                        src="./assets/img/account.png" alt="Account Icon"><span>Account</span></a>
+                <button class="home__options--container" href=""><img src="./assets/img/book.png"
+                        alt="Lessons icon"><span>Lessons</span></button>
+                <button class="home__options--container" href=""><img src="./assets/img/wand.png"
+                        alt="Upgrade Icon"><span>Upgrade</span></button>
+                <button  class="home__options--container" id="accountLink" href=""><img
+                        src="./assets/img/account.png" alt="Account Icon"><span>Account</span></button>
             </div>
         </div>
         <div class="slideToggle" id="slideToggle"><img src="./assets/img/arrow.svg" alt="SlideToggle Arrow"></div>
@@ -138,10 +138,14 @@ if(!isset($_SESSION['usuario'])){
         });
 
         function closeTab(){
-            document.getElementById("account").style.display="none";
+            if(document.getElementById("account").style.display="block"){
+                document.getElementById("account").style.display="none";
+            }
         };
         function openTab(){
-            document.getElementById("account").style.display="block";
+            if(document.getElementById("account").style.display="none"){
+                document.getElementById("account").style.display="block";
+            }
         };
 
         document.getElementById("accountLink").setAttribute("onclick", "openTab()");
