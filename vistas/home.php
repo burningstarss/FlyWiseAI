@@ -5,11 +5,18 @@ if(!isset($_SESSION['usuario'])){
     exit;
     
   }
+  if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    if (isset($_SESSION['usuario'])){
+        unset ($_SESSION['usuario']);
+        header("Location:index.php");
+        exit;
+    }
+  }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
+    
 
 <head>
     <meta charset="UTF-8">
@@ -20,8 +27,15 @@ if(!isset($_SESSION['usuario'])){
     <script type="module" src="<?php echo $ruta ?>/assets/js/home.js"></script>
     <link rel="icon" type="image/ico" href="<?php echo $ruta ?>assets/img/favicon.ico">
 </head>
-
 <body>
+    <div class="account" id="account" style="display: block;">
+        <div class="account__box">
+        <form action="" method="POST">
+            <button class="signOut" id="logOffButton">Sign Out</button>
+        </form>
+        <button id="backButton" onclick="closeTab()">Back</button>
+        </div>   
+    </div>
     <div class="home">
         <div class="home__content" id="content">
             <a class="home__content--img" href="<?php echo $ruta ?>index.php">
@@ -44,12 +58,11 @@ if(!isset($_SESSION['usuario'])){
                         alt="Lessons icon"><span>Lessons</span></a>
                 <a class="home__options--container" href=""><img src="./assets/img/wand.png"
                         alt="Upgrade Icon"><span>Upgrade</span></a>
-                <a class="home__options--container" href="<?php echo $ruta ?>index.php?controlador=signin"><img
+                <a id="accountLink" class="home__options--container" href=""><img
                         src="./assets/img/account.png" alt="Account Icon"><span>Account</span></a>
             </div>
         </div>
         <div class="slideToggle" id="slideToggle"><img src="./assets/img/arrow.svg" alt="SlideToggle Arrow"></div>
-
         <div class="home__chatbot">
             <div id="chat-container">
                 <div id="chat-conversation"></div>
@@ -123,6 +136,16 @@ if(!isset($_SESSION['usuario'])){
                 sendMessage();
             }
         });
+
+        function closeTab(){
+            document.getElementById("account").style.display="none";
+        };
+        function openTab(){
+            document.getElementById("account").style.display="block";
+        };
+
+        document.getElementById("accountLink").setAttribute("onclick", "openTab()");
+        
     </script>
 </body>
 

@@ -42,8 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <div class="form__container">
     <a href="<?php echo $ruta?>index.php"><img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt=""></a>
     <form id="" method="post">
-    <h1 class="">Restablecer contraseña</h1>
-    <p>Introduzca su dirección de correo electrónico y le enviaremos un correo electrónico con instrucciones para restablecer su contraseña.</p>
+    <h1 class="">Recover Password</h1>
+    <p>Enter your email address and we will send you an email with instructions to reset your password.</p>
       <div class="form__floating">
         <label for="floatingInput">Email</label>
         <input type="email" name="email" placeholder="name@host.com">
