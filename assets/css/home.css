@@ -147,13 +147,13 @@
   width: 50px;
 }
 
-.account {
+.coming {
   position: absolute;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(3px);
 }
-.account__box {
+.coming div {
   background-color: #4D4D4D;
   position: relative;
   max-width: 300px;
@@ -165,16 +165,19 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   z-index: 1;
 }
-.account__box button {
-  position: relative;
+.coming div button {
   max-width: 100%;
   width: 100%;
 }
-.account__box button:hover {
+.coming div button:hover {
   background-color: #6674D4;
+}
+.coming div form {
+  width: 100%;
 }
 
 a {
