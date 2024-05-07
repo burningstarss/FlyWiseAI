@@ -77,7 +77,7 @@ function slide() {
         $slideToggle.animate({ left: -30 }, 500); // Mover el botón hacia la izquierda
     } else {
         $content.animate({ left: 0, width: '100%' }, 500); // Desplazar hacia la derecha para mostrar
-        $slideToggle.animate({ left: 0 }, 500); // Mover el botón hacia la derecha según el ancho del contenido
+        $slideToggle.animate({ left: 0 }, 300); // Mover el botón hacia la derecha según el ancho del contenido
     }
     // Rotación del slideToggle
     var rotationDeg = rotated ? 0 : 90;
