@@ -18,7 +18,7 @@
         width: 90%;
         padding: 20px;
         background-color: #4D4D4D;
-        
+        position: relative;
         &--img{
             width: 100%;
             display: flex;
@@ -42,7 +42,7 @@
     .chat-input{
         display: flex;
         flex-direction: row;
-        width: calc(80% - 15px);
+        width: calc(90% - 15px);
         padding: 5px 15px;
         color: #FFFFFF;
         background-color: #4D4D4D;
@@ -54,7 +54,7 @@
 
     #chat-container {
         height: 100%;
-        width: 80%;
+        width: 90%;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
@@ -121,7 +121,7 @@
         height: 100%;
         margin-left: 10px;
         align-items: center;
-        z-index: -1;
+        cursor: pointer;
 
         img{
             max-height: 40px;

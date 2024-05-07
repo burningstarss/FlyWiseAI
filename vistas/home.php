@@ -26,6 +26,8 @@ if(!isset($_SESSION['usuario'])){
     <link href="<?php echo $ruta ?>/assets/css/globalstyles.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $ruta ?>/assets/css/home.css" rel="stylesheet">
     <script src="<?php echo $ruta ?>/assets/js/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
     <link rel="icon" type="image/ico" href="<?php echo $ruta ?>assets/img/favicon.ico">
 </head>
 <body>
@@ -69,7 +71,7 @@ if(!isset($_SESSION['usuario'])){
                         src="./assets/img/account.png" alt="Account Icon"><span>Account</span></button>
             </div>
         </div>
-        <div class="slideToggle" id="slideToggle"><img src="./assets/img/arrow.svg" alt="SlideToggle Arrow"></div>
+        <div class="slideToggle" id="slideToggle" onclick="slide()"><img src="./assets/img/arrow.svg" alt="SlideToggle Arrow"></div>
         <div class="home__chatbot">
             <div id="chat-container">
                 <div id="chat-conversation"></div>

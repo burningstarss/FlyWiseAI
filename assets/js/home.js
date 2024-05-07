@@ -3,7 +3,6 @@ function accountTab(){
     if(document.getElementById("account").style.display=="none"){
         document.getElementById("account").style.display="block";
     }else {
-        console.log("none");
         document.getElementById("account").style.display="none"
     }
 };
@@ -69,12 +68,17 @@ function appendMessage(sender, message) {
 
 var rotated = false;
 
-$("#slideToggle").click(function () {
-    var contentElement = $(this).closest(".home").find("#content");
+function slide() {
+    var $content = $(".home #content");
+    var $slideToggle = $(".slideToggle");
 
-    // Animación del content
-    contentElement.toggle("slide", { direction: "left" }, 500);
-
+    if ($content.css('left') === '0px') {
+        $content.animate({ left: '-100%', width: 0 }, 500); // Desplazar hacia la izquierda para ocultar
+        $slideToggle.animate({ left: -30 }, 500); // Mover el botón hacia la izquierda
+    } else {
+        $content.animate({ left: 0, width: '100%' }, 500); // Desplazar hacia la derecha para mostrar
+        $slideToggle.animate({ left: 0 }, 500); // Mover el botón hacia la derecha según el ancho del contenido
+    }
     // Rotación del slideToggle
     var rotationDeg = rotated ? 0 : 90;
     $("#slideToggle img").animate({ rotate: rotationDeg + 'deg' }, {
@@ -86,4 +90,4 @@ $("#slideToggle").click(function () {
 
     // Actualizar el estado de rotación
     rotated = !rotated;
-});
+};
