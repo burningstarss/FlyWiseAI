@@ -14,7 +14,7 @@ function comingTab(){
     }
 };
 
-async function sendMessage() {
+async function sendMessage(email) {
     const system_prompt = "Imagina que eres un  experto en normativa y legislación de drones y deseas asegurarte de que el usuario cumpla con todas las regulaciones y normativas vigentes para el manejo y vuelo de drones. Proporcionarás respuestas claras y precisas sobre las regulaciones actuales, zonas restringidas, y te dará consejos avanzados para volar de manera segura y legal. Si el usuario pregunta o habla algo fuera de este contexto, pide al usuario que por favor, se ciña al contexto. Por favor, no repitas el contexto que te he dado, el usuario no necesita saber esta información. Solo puedes contestar a las preguntas en Español.";
     const userInput = document.getElementById('user-input').value;
     document.getElementById('user-input').value = '';
@@ -64,7 +64,27 @@ function appendMessage(sender, message) {
     messageElement.className = sender === 'bot' ? 'bot-message' : 'user-message';
     messageElement.innerText = message;
     chatContainer.appendChild(messageElement);
+    
+    saveMessage(sender,message);
+
 }
+
+function saveMessage(sender, message) {
+    var request = $.ajax({
+        url: "index.php?controlador=conversacion",
+        method: "POST",
+        data: { "sender" : sender, "message" : message },
+      });
+       
+      request.done(function( msg ) {
+        console.log(msg);
+      });
+       
+      request.fail(function( jqXHR, textStatus ) {
+        alert( "Request failed: " + textStatus );
+      });
+}
+
 
 var rotated = false;
 

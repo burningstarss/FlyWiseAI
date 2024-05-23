@@ -78,7 +78,7 @@ if(!isset($_SESSION['usuario'])){
             </div>
             <div class="chat-input">
                 <input type="text" id="user-input"  onkeypress="if(event.keyCode == 13){sendMessage()}" placeholder="Type your message...">
-                <button id="send-button" onclick="sendMessage()"><img src="./assets/img/send.png" alt=""></button>
+                <button id="send-button" onclick="sendMessage('<?php echo $_SESSION['usuario']?>';)"><img src="./assets/img/send.png" alt=""></button>
             </div>
         </div>
     </div>
