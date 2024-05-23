@@ -48,6 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <title>Sign In</title>
   <link href="<?php echo $ruta?>/assets/css/globalstyles.css" rel="stylesheet">
   <link href="<?php echo $ruta?>/assets/css/signin.css" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="<?php echo $ruta ?>assets/img/favicon.ico">
 </head>
 
 </body>

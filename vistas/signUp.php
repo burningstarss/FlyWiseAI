@@ -36,6 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <title>Sign Up</title>
   <link href="<?php echo $ruta ?>/assets/css/globalstyles.css" rel="stylesheet">
   <link href="<?php echo $ruta ?>/assets/css/signup.css" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="<?php echo $ruta ?>assets/img/favicon.ico">
 </head>
 
 </body>
