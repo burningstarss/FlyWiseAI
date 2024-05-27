@@ -8,7 +8,7 @@ $db = $service->initializeDatabase('Conversacion', 'id');
 
 $newConversacion = [
     'mensaje'       => $_POST["message"],
-    'timestamp'  => '01/01/1999', 
+    'timestamp'  => date("Y-m-d H:i:s"), 
     'email'       =>  $_SESSION['usuario'],
     'sender' => $_POST["sender"]
 ];
