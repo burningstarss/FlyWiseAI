@@ -1,11 +1,11 @@
 <?php 
-
-Class ConversacionControlador{
+class ObtenerFilaControlador{
 
     public function __construct(Type $var = null) {
         require_once("./vistas/Vista.php");
         $vista= new Vista();
-        $vista->render("insertConvo",array());   
-                
-    }  
+        $vista->render("obtenerFila",array());
+
+    }
+
 }
