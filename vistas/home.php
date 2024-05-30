@@ -24,7 +24,7 @@ if(!isset($_SESSION['usuario'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="<?php echo $ruta ?>/assets/css/globalstyles.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo $ruta ?>/assets/css/home.css" rel="stylesheet">
+    <link href="<?php echo $ruta ?>/assets/css/home.css" rel="stylesheet">
     <script src="<?php echo $ruta ?>/assets/js/home.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
@@ -34,15 +34,15 @@ if(!isset($_SESSION['usuario'])){
     <div class="coming" id="coming" style="display: none;">
         <div>
             <p>Coming soon...</p>
-            <button id="backButton" onclick="comingTab()">Back</button>
+            <button id="backButton1" onclick="comingTab()">Back</button>
         </div>
     </div>
     <div class="coming" id="account" style="display: none;">
         <div class="account__box">
-        <form action="" method="POST">
+        <form action="index.php" method="POST">
             <button class="signOut" id="logOffButton">Sign Out</button>
         </form>
-        <button id="backButton" onclick="accountTab()">Back</button>
+        <button id="backButton2" onclick="accountTab()">Back</button>
         </div>   
     </div>
     <div class="home">
@@ -63,11 +63,11 @@ if(!isset($_SESSION['usuario'])){
                 <div><a>Drone Normative</a></div>
             </div>
             <div class="home__options">
-                <button class="home__options--container" id="lessonsButton" href="" onclick="comingTab()"><img src="./assets/img/book.png"
+                <button class="home__options--container" id="lessonsButton" onclick="comingTab()"><img src="./assets/img/book.png"
                         alt="Lessons icon"><span>Lessons</span></button>
-                <button class="home__options--container" id="upgradeButton" href="" onclick="window.location.href='<?php echo $ruta?>index.php?controlador=contact';"><img src="./assets/img/wand.png"
+                <button class="home__options--container" id="upgradeButton" onclick="window.location.href='<?php echo $ruta?>index.php?controlador=contact';"><img src="./assets/img/wand.png"
                         alt="Upgrade Icon"><span>Upgrade</span></button>
-                <button  class="home__options--container" id="accountButton" href="" onclick="accountTab()"><img
+                <button  class="home__options--container" id="accountButton" onclick="accountTab()"><img
                         src="./assets/img/account.png" alt="Account Icon"><span>Account</span></button>
             </div>
         </div>
@@ -82,6 +82,5 @@ if(!isset($_SESSION['usuario'])){
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
