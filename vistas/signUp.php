@@ -39,19 +39,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <link rel="icon" type="image/ico" href="<?php echo $ruta ?>assets/img/favicon.ico">
 </head>
 
-</body>
+<body>
 <main class="form">
   <div class="form__container">
     <a href="<?php echo $ruta?>index.php"><img src="./assets/img/fywiseaiwhitecolor.svg" alt=""></a>
-    <form method="post" autocomplete="off">
+    <form id="FormularioSignUp" method="post" autocomplete="off">
       <h1 class="">Sign Up</h1>
       <div class="form__floating">
-        <label for="floatingInput">Email</label>
-        <input type="email" name="email" id="email" placeholder="name@host.com">
+        <label for="emailSignUp">Email</label>
+        <input id="emailSignUp" type="email" name="email" placeholder="name@host.com">
       </div>
       <div class="form__floating">
-        <label for="floatingPassword">Password</label>
-        <input type="password" name="password" placeholder="Password">
+        <label for="passwordSignUp">Password</label>
+        <input id="passwordSignUp" type="password" name="password" placeholder="Password">
       </div>
       <button type="submit">Sign Up</button>
       <div class="form__signup">
