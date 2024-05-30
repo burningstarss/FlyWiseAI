@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <link rel="icon" type="image/ico" href="<?php echo $ruta ?>assets/img/favicon.ico">
 </head>
 
-</body>
+<body>
 <main class="form">
   <div class="form__container">
     <a href="<?php echo $ruta?>index.php"><img src="./assets/img/fywiseaiwhitecolor.svg" alt=""></a>
@@ -93,12 +93,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       <h1 class="">Log In</h1>
 
       <div class="form__floating">
-      <label for="floatingInput">Email</label>
-      <input type="email" name="email" placeholder="name@host.com">
+      <label for="emailSignIn">Email</label>
+      <input id="emailSignIn" type="email" name="email" placeholder="name@host.com">
       </div>
       <div class="form__floating">
-      <label for="floatingPassword">Password</label>
-      <input type="password" name="password" placeholder="Password">
+      <label for="passwordSignIn">Password</label>
+      <input id="passwordSignIn" type="password" name="password" placeholder="Password">
       <a href="<?php echo $ruta?>index.php?controlador=forgotpassword">Forgot your password?</a>
       </div>
       <button class="" type="submit">Log In</button>
