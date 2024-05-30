@@ -37,16 +37,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <link href="<?php echo $ruta?>/assets/css/forgotpassword.css" rel="stylesheet">
 </head>
 
-</body>
+<body>
 <main class="form">
   <div class="form__container">
     <a href="<?php echo $ruta?>index.php"><img src="./assets/img/fywiseaiwhitecolor.svg" alt=""></a>
-    <form id="" method="post">
+    <form id="fpasswordForm" method="post">
     <h1 class="">Recover Password</h1>
     <p>Enter your email address and we will send you an email with instructions to reset your password.</p>
       <div class="form__floating">
-        <label for="floatingInput">Email</label>
-        <input type="email" name="email" placeholder="name@host.com">
+        <label for="emailRP">Email</label>
+        <input type="email" id="emailRP" name="email" placeholder="name@host.com">
       </div>
       <button class="" type="submit">Enviar correo electrónico</button>
     </form>
