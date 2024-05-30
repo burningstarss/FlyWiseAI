@@ -40,12 +40,12 @@ catch(Exception $e){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Home</title>
 </head>
 <body>
     <form action="GET">
 
-    <textarea name="" id=""></textarea>
+    <textarea name="text" id="textAreaConv"></textarea>
     <button>send</button>
 
     </form>
