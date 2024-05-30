@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
    
 
     try {
-        $auth->recoverPassword("email");
+        $auth->recoverPassword($email);
         echo 'Email enviado a: ' . $email;
       } catch (Exception $e) {
         echo $auth->getError();
