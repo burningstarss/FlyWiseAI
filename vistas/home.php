@@ -65,7 +65,7 @@ if(!isset($_SESSION['usuario'])){
             <div class="home__options">
                 <button class="home__options--container" id="lessonsButton" href="" onclick="comingTab()"><img src="./assets/img/book.png"
                         alt="Lessons icon"><span>Lessons</span></button>
-                <button class="home__options--container" id="upgradeButton" href="" onclick="comingTab()"><img src="./assets/img/wand.png"
+                <button class="home__options--container" id="upgradeButton" href="" onclick="window.location.href='<?php echo $ruta?>index.php?controlador=contact';"><img src="./assets/img/wand.png"
                         alt="Upgrade Icon"><span>Upgrade</span></button>
                 <button  class="home__options--container" id="accountButton" href="" onclick="accountTab()"><img
                         src="./assets/img/account.png" alt="Account Icon"><span>Account</span></button>
