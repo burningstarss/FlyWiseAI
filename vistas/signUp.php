@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </body>
 <main class="form">
   <div class="form__container">
-    <a href="<?php echo $ruta?>index.php"><img src="./assets/img/fywiseaiwhitecolor.svg" width="260px" height="53px" alt=""></a>
+    <a href="<?php echo $ruta?>index.php"><img src="./assets/img/fywiseaiwhitecolor.svg" alt=""></a>
     <form method="post" autocomplete="off">
       <h1 class="">Sign Up</h1>
       <div class="form__floating">
